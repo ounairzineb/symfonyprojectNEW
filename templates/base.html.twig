@@ -9,25 +9,65 @@
     {% block stylesheets %}
         <link rel="stylesheet" href="{{ asset('css/app.css') }}">
         <link rel="stylesheet" href="{{ asset('css/styles.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+        <style>
+            .header {
+                background-color: lightpink;
+            }
+            .nav-link {
+                color: purple;
+                font-weight: bold;
+            }
 
+            .title {
+                text-align: center;
+                margin-top: -50px;
+                padding-top: 50px;
+            }
+
+            .title .centered-title {
+                font-size: 60px;
+                color: palevioletred;
+                font-weight: bold;
+            }
+            .body-content {
+                margin-top: 80px;
+            }
+
+        </style>
     {% endblock %}
     {% block javascripts %}
     {% endblock %}
 </head>
 <body>
-
-<div class="sidebar">
-    <a href="{{ path('app_product_index') }}">Products</a>
-    <a href="{{ path('app_category_index') }}">Categories</a>
-
+<div class="wrapper">
+<div class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ path('app_logout') }}">Logout</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
 <div class="container">
     <div class="title">
-        {% block page_title %}
-        {% endblock %}
+        {% block page_title %}{% endblock %}
     </div>
-    {% block body %}{% endblock %}
+    <div class="sidebar">
+        <a href="{{ path('app_product_index') }}">Products</a>
+        <a href="{{ path('app_category_index') }}">Categories</a>
+    </div>
+    <div class="body-content">
+        {% block body %}{% endblock %}
+    </div>
 </div>
-
+<div class="footer">&copy;<span id="year"> </span><span> 212 Communication. All rights reserved.</span></div>
+</div>
 </body>
 </html>

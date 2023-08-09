@@ -1,4 +1,4 @@
-/* Apply styles to table */
+
 .table {
     width: 100%;
     border-collapse: collapse;
@@ -10,7 +10,7 @@
     border: 1px solid #ccc;
 }
 
-/* Apply styles to buttons */
+
 .btn {
     padding: 5px 10px;
     border: none;

@@ -1,0 +1,23 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.body-content {
+    flex-grow: 1;
+}
+
+.footer {
+    padding: 2rem;
+    background: #555;
+    color: white;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
