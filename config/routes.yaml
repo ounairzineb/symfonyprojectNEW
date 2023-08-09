@@ -1,0 +1,20 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+# config/routes.yaml
+home:
+    path: /
+    methods: ['GET']
+    defaults:
+        _controller: 'App\Controller\HomeController::index'
+# config/routes.yaml
+app_product_index:
+    path: /products
+    controller: App\Controller\ProductController::index
+    methods: ['GET']
+app_category_index:
+    path: /categories
+    controller: App\Controller\CategoryController::index
+    methods: [ 'GET' ]

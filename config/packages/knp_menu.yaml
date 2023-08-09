@@ -1,0 +1,4 @@
+# config/packages/knp_menu.yaml
+knp_menu:
+  twig:
+    template: 'knp_menu.html.twig'

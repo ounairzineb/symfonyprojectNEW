@@ -1,0 +1,67 @@
+
+.menu {
+    display: flex;
+    background-color: #333;
+    padding: 10px;
+}
+
+.menu-item {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.menu-item a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.menu-item a:hover {
+    background-color: #555;
+}
+
+/* public/css/styles.css */
+.sidebar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    color: white;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    color: lightpink;
+}
+
+.sidebar a:hover {
+    background-color: #555;
+    color: white;
+}
+
+.container {
+    margin-left: 260px;
+    padding: 70px;
+}
+
+.title {
+    text-align: center;
+    margin-top: 0;
+    padding-top: 50px;
+}
+
+.title .centered-title {
+    font-size: 60px;
+    color: brown;
+    font-weight: bold;
+}
